@@ -2,7 +2,7 @@ name: 'Run publishing to the registry'
 
 on:
   workflow_call:
-    input:
+    inputs:
       GITHUB_TOKEN:
         required: true
 
@@ -21,4 +21,4 @@ runs:
       shell: bash
       run: npm install
       env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ inputs.GITHUB_TOKEN }}
