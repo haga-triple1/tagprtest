@@ -1,7 +1,10 @@
 name: 'Run publishing to the registry'
 
 on:
-  workflow_call
+  workflow_call:
+    secrets:
+      GITHUB_TOKEN:
+        required: true
 
 runs:
   using: "composite"
