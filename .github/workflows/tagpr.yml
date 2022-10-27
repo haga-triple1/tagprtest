@@ -10,3 +10,6 @@ jobs:
       - uses: Songmu/tagpr@main
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: deploy
+        if: "steps.tagpr.outputs.tag != ''"
+        run: npm i
