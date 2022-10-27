@@ -11,5 +11,5 @@ jobs:
         uses: Songmu/tagpr@main
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      - use: ./publish.yml
+      - uses: ./publish.yml
         if: "steps.tagpr.outputs.tag != ''"
