@@ -26,6 +26,6 @@ jobs:
 
     - name: publish
       shell: bash
-      run: npm publish
+      run: npm install
       env:
         NODE_AUTH_TOKEN: ${{ inputs.GITHUB_TOKEN }}
