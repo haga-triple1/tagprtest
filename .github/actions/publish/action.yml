@@ -5,8 +5,7 @@ on:
     inputs:
       GITHUB_TOKEN:
         required: true
-
-runs:
+jobs:
   using: "composite"
   steps:
     - uses: actions/checkout@v2
@@ -20,5 +19,13 @@ runs:
     - name: install
       shell: bash
       run: npm install
+
+    - name: build
+      shell: bash
+      run : npm run build
+
+    - name: publish
+      shell: bash
+      run: npm publish
       env:
-          NODE_AUTH_TOKEN: ${{ inputs.GITHUB_TOKEN }}
+        NODE_AUTH_TOKEN: ${{ inputs.GITHUB_TOKEN }}
