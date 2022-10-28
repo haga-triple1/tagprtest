@@ -33,4 +33,5 @@
 	vPrefix = true
 	releaseBranch = main
 	versionFile = package.json
+	#HACK: hoge
 	command = echo 'npm i --package-lock-only --ignore-scripts && git add package-lock.json' >  ./.git/hooks/pre-commit && chmod a+x ./.git/hooks/pre-commit
