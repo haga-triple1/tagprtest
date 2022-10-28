@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/haga-triple1/tagprtest/issues"
   },
-  "homepage": "https://github.com/haga-triple1/tagprtest#readme"
+  "homepage": "https://github.com/haga-triple1/tagprtest#readme",
+  "dependencies": {
+    "typescript": "^4.8.4"
+  }
 }
