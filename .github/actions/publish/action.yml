@@ -21,4 +21,4 @@ runs:
       shell: bash
       run: npm install
       env:
-          GITHUB_TOKEN: ${{ inputs.GITHUB_TOKEN }}
+          NODE_AUTH_TOKEN: ${{ inputs.GITHUB_TOKEN }}
