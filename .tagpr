@@ -32,5 +32,5 @@
 [tagpr]
 	vPrefix = true
 	releaseBranch = main
-	versionFile = package.json
+	versionFile = package.json,package-lock.json
 	command = npm i --package-lock-only --ignore-scripts && git add package-lock.json && git commit -m 'update package-lock.json' && git push origin head
