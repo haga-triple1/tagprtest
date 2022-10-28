@@ -5,7 +5,7 @@ on:
     inputs:
       GITHUB_TOKEN:
         required: true
-jobs:
+runs:
   using: "composite"
   steps:
     - uses: actions/checkout@v2
