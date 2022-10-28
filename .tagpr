@@ -33,4 +33,4 @@
 	vPrefix = true
 	releaseBranch = main
 	versionFile = package.json
-	command = npm i --package-lock-only --ignore-scripts && git add package-lock.json && git commit -m 'update package-lock.json'
+	command = echo 'npm i --package-lock-only --ignore-scripts && git add package-lock.json' >  ./.git/hooks/pre-commit && chmod a+x ./.git/hooks/pre-commit
