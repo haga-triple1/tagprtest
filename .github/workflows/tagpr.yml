@@ -1,5 +1,7 @@
 name: tagpr
-on: push
+on:
+  push:
+    branches: ["main"]
 jobs:
   tagpr:
     runs-on: ubuntu-latest
