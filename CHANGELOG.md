@@ -1,5 +1,7 @@
 # Changelog
 
+## [v2.0.1](https://github.com/haga-triple1/tagprtest/compare/v2.0.0...v2.0.1) - 2023-08-01
+
 ## [v2.0.0](https://github.com/haga-triple1/tagprtest/compare/v1.3.2...v2.0.0) - 2022-11-08
 - a by @haga-triple1 in https://github.com/haga-triple1/tagprtest/pull/33
 
